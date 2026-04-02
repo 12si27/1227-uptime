@@ -7,7 +7,7 @@ sites:
     url: https://cloud.1227.kr/ping/
     link: https://cloud.1227.kr
   - name: 1227 OpenCloud Sub Server
-    url: https://cloud-stream-sub.1227.kr/ping/
+    url: https://cloud-stream-sub.1227.kr/ping
     link: https://cloud.1227.kr
   - name: 1227 Encoder
     url: https://encoder.1227.kr
