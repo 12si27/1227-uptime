@@ -1,25 +1,64 @@
-# Change these first
-owner: 12si27 # Your GitHub organization or username, where this repository lives
-repo: 1227-uptime # The name of this repository
+# 1227 OpenCloud Upptime Configuration
+owner: 12si27
+repo: 1227-uptime
 
 sites:
-  - name: 1227 OpenCloud
+  - name: 1227 OpenCloud Main Server
     url: https://cloud.1227.kr/ping/
+    link: https://cloud.1227.kr
+  - name: 1227 OpenCloud Sub Server
+    url: https://cloud-stream-sub.1227.kr/ping/
+    link: https://cloud.1227.kr
+  - name: 1227 Encoder
+    url: https://encoder.1227.kr
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: uptime.1227.kr
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.1227.kr
+  logoUrl: https://cloud.1227.kr/img.png
+  name: 1227 OpenCloud # 브라우저 탭 타이틀로 사용됩니다.
+  theme: dark # 다크 테마 기본 활성화
+
+  # 기존 introTitle과 introMessage를 대체하여 커스텀 HTML 타이틀 삽입
+  introHtml: |
+    <div class="cloud-title" style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">
+      <span style="font-weight: 900; font-size: 3rem;">12:<span style="color:#5aa1ef">27</span></span><br>
+      <span style="font-weight: 600; font-size: 1.8rem;">OpenCloud</span>
+    </div>
+    <p style="text-align: center; color: #a0aec0; margin-bottom: 3rem; font-size: 1.1rem;">
+      1227 OpenCloud 서비스 및 엔드포인트의 실시간 상태 모니터링 페이지입니다.
+    </p>
+
+  # 강제 다크 테마 및 커스텀 색상 적용
+  customStyles: |
+    body, html {
+      background-color: #161C23 !important;
+      color: #ffffff !important;
+    }
+    /* Upptime 기본 컨테이너 및 카드 배경색 오버라이드 */
+    .bg-white {
+      background-color: #1e2630 !important; /* 메인 배경보다 살짝 밝은 색으로 카드 요소 구분 */
+    }
+    /* 텍스트 색상 오버라이드 */
+    .text-gray-900, .text-gray-800 {
+      color: #ffffff !important;
+    }
+    .text-gray-500, .text-gray-600 {
+      color: #a0aec0 !important;
+    }
+    /* 테두리 색상 부드럽게 처리 */
+    .border-gray-200, .border-gray-100 {
+      border-color: #2d3748 !important;
+    }
+    /* 네비게이션 바 투명화 처리 */
+    nav, header {
+      background-color: transparent !important;
+      border-bottom: 1px solid #2d3748 !important;
+    }
+
   navbar:
     - title: Status
       href: /
+    - title: OpenCloud Home
+      href: https://cloud.1227.kr
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
