@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 824,
-    "timeDay": 804,
-    "timeWeek": 857,
-    "timeMonth": 824,
-    "timeYear": 824,
+    "time": 823,
+    "timeDay": 806,
+    "timeWeek": 920,
+    "timeMonth": 823,
+    "timeYear": 823,
     "dailyMinutesDown": {}
   },
   {
@@ -23,16 +23,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/cloud-stream-sub.1227.kr.ico",
     "slug": "1227-open-cloud-sub-server",
     "status": "up",
-    "uptime": "99.45%",
+    "uptime": "99.48%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.45%",
-    "uptimeYear": "99.45%",
-    "time": 708,
-    "timeDay": 479,
-    "timeWeek": 761,
-    "timeMonth": 708,
-    "timeYear": 708,
+    "uptimeMonth": "99.48%",
+    "uptimeYear": "99.48%",
+    "time": 697,
+    "timeDay": 505,
+    "timeWeek": 749,
+    "timeMonth": 697,
+    "timeYear": 697,
     "dailyMinutesDown": {
       "2026-04-02": 111
     }
@@ -48,11 +48,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 790,
-    "timeDay": 794,
+    "time": 782,
+    "timeDay": 651,
     "timeWeek": 763,
-    "timeMonth": 790,
-    "timeYear": 790,
+    "timeMonth": 782,
+    "timeYear": 782,
     "dailyMinutesDown": {}
   }
 ]
